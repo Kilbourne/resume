@@ -1,0 +1,32 @@
+<header id="header">
+    <div class="container papers">
+        <img class="header-photo" src="{{ domain }}images/me.jpg" width="90" alt="My photo">
+        <h1 class="header-name">{{ data.basics.name }}</h1>
+        <h2 class="header-title">{{ data.basics.label }}</h2>
+        <p class="header-subtitle">{%for split in data.basics.summary|split(" ") %}
+            <span>{{ split }}</span>{% endfor %}</p>
+        <p class="header-info">
+            <span>{{ "Birth date"|i18n("Birth date") }}: {{ data.extra.birthdate }}</span>
+            <br>
+            <span>{{ "Address"|i18n("Address") }}: {{ data.basics.location.address }} - {{ data.basics.location.city }} {{ data.extra.nation }}</span>
+            <br>
+            <span>{{ "Available to"|i18n("Available to") }}: {{ data.extra.available }}</span>
+            <br>
+            <span>{{ "Suitable roles"|i18n
+("Suitable roles") }}: {{ data.extra.suitableRoles}}</span>
+        </p>
+        <p class="header-end">{{ "You can call me on"|i18n("You can call me on") }} <strong>{{ data.basics.phone }}</strong>, {{ "email me at"|i18n("email me at") }} <strong>{{ data.basics.email }}</strong> </p>
+        <div class="button-line">
+            <button class="btn" id="print"><span>{{ "PRINT RESUME"|i18n("PRINT RESUME") }}</span></button>
+            <a href="resume.pdf" class="btn" id="pdf"><span> {{ "PDF VERSION"|i18n("PDF VERSION") }}</span></a>
+            <a href="resume.json" class="btn" id="json"><span>{{ "JSON VERSION"|i18n("JSON VERSION") }}</span></a>
+        </div>
+        <ul class="social-list">
+            <li class="social"><a class="social-link" href="tel:+393294642213" title="Call me"><i class="fa fa-phone"></i></a></li>
+            <li class="social"><a class="social-link" href="mailto:luca.castellone@gmail.com" title="My gmail contact"><i class="fa fa-envelope"></i></a></li>
+            {% for social in data.basics.profiles %}
+            <li class="social"><a target="_blank" class="social-link" title="My {{social.network}} contact" href="{{ social.url }}"><i class="fa fa-{{social.network | lower}}"></i></a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</header>

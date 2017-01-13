@@ -1,0 +1,210 @@
+body.home,
+body.header,
+{
+    #barba-wrapper {
+        background-image: url(#{$baseurl}images/chalkboard.jpg);
+        background-repeat: repeat;
+    }
+}
+
+.barba-container {
+    &.header {
+        padding-top: 1rem;
+    }
+    &.home,
+    &.header {
+        background-color: transparent;
+        &.static {
+            background-image: url(#{$baseurl}images/chalkboard.jpg);
+            background-repeat: repeat;
+        }
+        .barba-container-wrapper {
+            @include margin(null 0 2rem 0);
+            @media screen and (min-width: 399.999px) {
+                @include margin(null 1.5rem 2rem 1.5rem);
+            }
+            @media screen and (min-width:599.999px) {
+                @include margin(null 3rem 2rem 3rem);
+            }
+        }
+    }
+}
+
+.menu {
+    &.header {
+        background-color: #A0A2A1;
+        .menu-item {
+            border: 2px solid;
+            background-color: #fff;
+            &::before,
+            &.active::before {
+                background-color: #367E68;
+            }
+            a {
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+#header {
+    font-family: "claire_hand";
+    background-color: #fff;
+    text-align: center;
+    flex-grow: 3;
+    font-size: 1rem;
+}
+
+body.home #header {
+    margin-bottom: 2rem;
+}
+
+.header-photo {
+    display: block;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    border: 1px solid;
+    overflow: hidden;
+}
+
+.header-name,
+.header-title {
+    font-family: "claire_hand";
+}
+
+.header-name {
+    padding: 5px 17px;
+    font-size: 1.125em;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border-left: 3px solid #88ACA1;
+    border-right: 3px solid #88ACA1;
+}
+
+.header-title {
+    font-size: 1em;
+    margin-bottom: 1.5rem;
+}
+
+.header-subtitle {
+    font-family: 'brandon_grotesque';
+    font-weight: 500;
+    font-style: normal;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.5;
+    max-width: 650px;
+    margin: 0 auto 1.5rem;
+    >span {
+        //display: block;
+        //margin-bottom: .5rem;
+        //text-align:left;
+        //text-align-last: left;
+        //&:first-child{ text-align:center; }
+    }
+}
+
+.header-info {
+    max-width: 600px;
+    margin: 0px auto 1rem;
+}
+
+.header-end {
+    margin: 0 0 1.5rem;
+}
+
+.button-line {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .btn {
+        margin: 0 1rem 1.5rem;
+        padding: 10px;
+        border: 1px solid;
+        width: 150px;
+        display: inline-block;
+        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >span {
+            max-width: 100%;
+            display: inline-block;
+        }
+        text-decoration: none;
+        @media screen and (min-width: 600px) {
+            font-size: 1.2em;
+        }
+    }
+}
+
+.social-list {
+    border-bottom: 1px dashed;
+    border-top: 1px dashed;
+    padding: 10px 0px;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.social {
+    display: inline;
+    font-size: 1.375em;
+    margin: 10px;
+}
+
+.social-link {
+    color: #747474;
+    margin-left: 8px;
+}
+
+.no-js {
+    #print.btn {
+        display: none;
+    }
+}
+
+
+/* rotate fall */
+
+.pt-page-rotateFall {
+    transform-origin: 0% 0%;
+    animation: rotateFall 1s both ease-in;
+}
+
+@keyframes rotateFall {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+        animation-timing-function: ease-out;
+    }
+    40% {
+        transform: rotateZ(17deg);
+    }
+    60% {
+        transform: rotateZ(16deg);
+    }
+    100% {
+        transform: translateY(100%) rotateZ(17deg);
+    }
+}
+
+.pt-page-scaleUp {
+    animation: scaleUp .7s ease both;
+}
+
+@keyframes scaleUp {
+    from {
+        opacity: 0;
+        transform: scale(.8);
+    }
+}

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'brandon_grotesque';
+    src: url('brandon_grotesque_bold-webfont.woff2') format('woff2'), url('brandon_grotesque_bold-webfont.woff') format('woff'), url('brandon_grotesque_bold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'brandon_grotesque';
+    src: url('brandon_grotesque_medium-webfont.woff2') format('woff2'), url('brandon_grotesque_medium-webfont.woff') format('woff'), url('brandon_grotesque_medium-webfont.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

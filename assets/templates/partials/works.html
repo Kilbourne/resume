@@ -1,0 +1,18 @@
+{% set works = data.work[0] %}
+<section id="work-expirience">
+    <h1 class="">{{ "Actual occupation"|i18n("Actual occupation") }}</h1>
+    <h2 class="">{{ works.position }}</h2>
+    <p class="nomargin">@</p>
+    <a class="nomargin company-link" href="{{ works.website }}"><img class="company-img" src="{{ domain }}images/menthalia.png" alt="{{works.company}}" width="200" height="67"></a>
+    <p class=""><span>{{ "Start date"|i18n("Start date") }}:</span> <span>{{ works.startDate }}</span></p>
+    <p class="work-summary">{{ works.summary }}</p>
+    <ul id="projects">
+        <h3>{{ "Some last works"|i18n("Some last works") }}</h3> {% for work in works.highlights %}
+        <li class="project">
+            <div class="img-demo"><a href="{{ work.url }}" alt="{{work.title}}" title="{{work.title}}" target="_blank">{{ work|screenshoot}}
+             </a>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</section>

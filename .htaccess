@@ -1,0 +1,6 @@
+DirectoryIndex index.html
+RewriteEngine On
+
+
+RewriteCond %{REQUEST_URI} !dist
+RewriteRule ([^\/]+\/?)([^\/]+.*)? $1dist/$2 [R]

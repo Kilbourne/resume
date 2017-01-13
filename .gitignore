@@ -1,0 +1,10 @@
+node_modules
+bower_components/**/*
+!bower_components/.gitkeep
+dist
+assets/styles/global/_*.scss
+assets/styles/cssmodule/**/*
+assets/styles/critical/*.css
+assets/images/siteshot/**/*
+.env
+npm-debug.log

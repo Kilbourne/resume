@@ -1,0 +1,17 @@
+{% set categories = { "Sass":"css", "PostCSS":"css", "ES6":"js", "React":"js", "Vuejs":"js", "Angular":"js", "Jquery":"js", "Lodash Underscore":"js", "Modernizr Conditionr":"js", "Velocityjs":"js", "underscore mustache handlebar marko jade":"js", "Wordpress":"wordpress", "WooCommerce":"wordpress", "WP-CLI":"wordpress", "Bedrock+Sage":"wordpress", "MultilingualPress Polylang":"wordpress", "ReactNative":"devices", "Ionic AppGyver":"devices", "Electron":"devices", "Nodejs":"nodejs", "Meteor":"nodejs", "Express LoopBack":"nodejs", "Socket.io":"nodejs", "Mongoose":"nodejs", "Laravel":"php", "Eloquent Doctrine":"php", "plates blade foil twig":"php", "Magento":"otherscms", "Grav October Bolt Cockpit":"otherscms", "Jekyll":"otherscms", "MySQL/MariaDB":"db", "Mongo":"db", "ElasticSearch":"db", "Redis Memcached":"db", "Adwords FBAds":"services", "PayPal Stripe":"services", "MailChimp MailGun":"services", "Cloudfare":"services", "Letsencrypt":"services", "OneSignal":"services", "Schema.org ":"data-format", "json-ld":"data-format", "JSON XML SVG MARKDOWN YAML":"data-format" } %}
+<section id="skills">
+    <div class="skills-container">
+        {% for type in data.skills %}
+        <div class="type {{ type.name|slug }}">
+            <h3 class="type-title">{{ type.name }}</h3>
+            <div class="items-container">
+                {% for item in type.keywords %}
+                <div class="item {{ categories[item]}}">
+                    {% if type.name|slug ==='devops' %} {% set splitted = item|split(":") %} {{ splitted[0]}} :<span>{{ splitted[1] }}</span>{% elif type.name|slug !=='patterns-and-concepts' %} {{ item }} {% else %} {% for split in item|split("(") %} {% if loop.index ===1 %} {{ split }} {% else %} <span>{{ split|replace(")", "") }}</span> {% endif %} {% endfor %} {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

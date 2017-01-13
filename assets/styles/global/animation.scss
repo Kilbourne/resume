@@ -1,0 +1,55 @@
+.et-wrapper {
+    position: relative;
+    perspective: 1200px;
+    display: block;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.et-page {
+    width: 100%;
+    //height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    transform-style: preserve-3d;
+}
+
+.et-page-current,
+.no-js .et-page {
+    visibility: visible;
+    z-index: 1;
+}
+
+.no-js body {
+    overflow: auto;
+}
+
+.pt-page-ontop {
+    z-index: 999;
+}
+
+.pt-page-fadeIn {
+    animation: fadeIn .5s ease both;
+    animation-delay: .5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+}
+
+.pt-page-fadeOut {
+    animation: fadeOut .5s ease both;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}

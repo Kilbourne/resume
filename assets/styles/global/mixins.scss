@@ -1,0 +1,27 @@
+@mixin margin ( $coordinates: n n n n) {
+    $top: nth($coordinates, 1);
+    $right: nth($coordinates, 2);
+    $bottom: nth($coordinates, 3);
+    $left: nth($coordinates, 4);
+    @if $top !='null' {
+        margin-top: $top;
+    }
+    @if $right !='null' {
+        margin-right: $right;
+    }
+    @if $bottom !='null' {
+        margin-bottom: $bottom;
+    }
+    @if $left !='null' {
+        margin-left: $left;
+    }
+}
+
+@function set-notification-text-color($color) {
+    @if (lightness($color) > 57.7) {
+        @return #000000; // Lighter backgorund, return dark color
+    }
+    @else {
+        @return #ffffff; // Darker background, return light color
+    }
+}

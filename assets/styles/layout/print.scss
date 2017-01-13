@@ -1,0 +1,52 @@
+body.print {
+    display: block;
+    font-family: "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+    #barba-wrapper {
+        background-image: url(#{$baseurl}images/chalkboard.jpg) !important;
+        background-repeat: repeat !important;
+    }
+    .barba-container {
+        min-height: auto;
+        padding: 1.5rem 0;
+        display: block;
+    }
+    .barba-container-wrapper {
+        display: block;
+    }
+    #work-expirience {
+        color: #167d7a !important;
+    }
+    .button-line {
+        display: none;
+    }
+    .barba-container {
+        &.skills {
+            background-image: url(#{$baseurl}images/pattern.jpg) !important;
+            background-position: 0px 0px !important;
+            background-repeat: repeat !important;
+            .type {
+                display: block !important;
+            }
+            page-break-after: avoid;
+        }
+        &.header {
+            background-color: transparent !important;
+            &.static {
+                background-image: url(#{$baseurl}images/chalkboard.jpg) !important;
+                background-repeat: repeat !important;
+            }
+            page-break-after: avoid;
+        }
+        &.work {
+            background-color: rgb(243, 239, 224) !important;
+            page-break-after: avoid;
+        }
+        &.others {
+            background-color: #0083db !important;
+            page-break-after: always;
+            h3 {
+                font-family: "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+            }
+        }
+    }
+}

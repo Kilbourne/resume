@@ -1,0 +1,16 @@
+<nav class="menu {% if pagename === 'home' %} header {% else %} {{pagename}} {% endif %}">
+    {% set active = '' %}
+    <ul>
+        {% for item in [ { label:'Intro',namespace:'header',url:'header.html'}, { label:'Work',namespace:'work',url:'works.html'}, { label:'Skills',namespace:'skills',url:'skills.html'}, { label:'Other Stuffs',namespace:'others',url:'others.html'} ] %}{% set pagename1 = pagename %} {% if pagename === 'home' %} {% set pagename1 = "header" %} {% endif %}
+        <li class="menu-item {% if pagename1 === item.namespace %}active {% endif %}" data-namespace="{{item.namespace}}">
+            {% if pagename1 !== item.namespace %}<a href="{{item.url}}">{% endif %}{{item.label}}{% if pagename1 !== item.namespace %}</a>{% endif %}</li>
+        {% if pagename1 === item.namespace %}{% set active = item.url %}{% endif %} {% endfor %}
+    </ul>
+    <div class="lang-sel {% if lang==='it'%} it {% endif %}">
+        {% if lang === 'default'%}
+        <a class="lang-switch" href="{{ domain }}it/{{active}}"><img src="{{ domain }}images/italy.png" alt="Italy map" width="40" height="40"></a>
+        {% elif lang === 'it' %}
+        <a class="lang-switch" href="{{ domain }}{{active}}"><img src="{{ domain }}images/globe.svg" alt="Globe icon" width="57" height="57"></a>
+        {% endif %}
+    </div>
+</nav>

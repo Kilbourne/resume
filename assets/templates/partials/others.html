@@ -1,0 +1,44 @@
+{% set education = data.education[0] %}
+<section class="other-stuffs">
+    <div class="education">
+        <h3>{{ "Education"| i18n("Education") }}</h3>
+        <p class="edu-title">{{education.studyType}} in {{education.area}}.</p>
+        <p>{{ "Academic Interests"| i18n("Academic Interests") }}: {% for course in education.courses %}
+            <span>{{ course }}{% if loop.index !== loop.length %}, {% endif %}</span> {% endfor %}
+        </p>
+    </div>
+    <div class="langs">
+        <h3>{{ "Languages"| i18n("Languages") }}</h3>
+        <ul>
+            {% for language in data.languages %}
+            <li>{{ language.language }} : {{ language.fluency }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="soft-skills">
+        <h3>Soft Skills</h3>
+        <ul>{% for skill in data.extra.softSkills %}
+            <li>{{ skill }}</li>
+            {% endfor %} </ul>
+    </div>
+    <div class="civic">
+        <h3>{{ "Civic Engagement"| i18n("Civic Engagement") }}</h3>
+        <ul>
+            {% for service in data.volunteer %}
+            <li>
+                <p>{{ service.position }} @ {% if service.website %} <a href="{{ service.website }}">{% endif %}{{ service.organization }}{% if service.website%}</a> {% endif %}</p>
+                <p>{{ service.summary }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% if data.interests %}
+    <div class="interests">
+        <h3>{{ "Interests"| i18n("Interests") }}</h3>
+        <p>
+            {% for interest in data.interests %}
+            <span>{{ interest.name }}</span> {% endfor %}
+        </p>
+    </div>
+    {% endif %}
+</section>

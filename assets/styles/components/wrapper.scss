@@ -1,0 +1,29 @@
+@import "../global/variables";
+@import "../global/mixins";
+#barba-wrapper {
+    background-color: #808080;
+    position: relative;
+}
+
+.barba-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.barba-container-wrapper {
+    min-height: 100vh;
+    min-height: calc( 100vh - 4.5625rem);
+    @include margin(null 1.5rem 0 1.5rem);
+    .barba-subwrapper {
+        width: 100%;
+    }
+    @media screen and (min-width: 599.999px) {
+        @include margin(null 3rem 0 3rem);
+    }
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}

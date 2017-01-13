@@ -1,0 +1,1 @@
+export default [{ label: 'Intro', namespace: 'header', url: 'header.html' }, { label: 'Work', namespace: 'work', url: 'works.html' }, { label: 'Skills', namespace: 'skills', url: 'skills.html' }, { label: 'Other Stuffs', namespace: 'others', url: 'others.html' }];

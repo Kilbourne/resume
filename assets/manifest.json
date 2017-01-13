@@ -1,0 +1,9 @@
+{
+    "dependencies": {
+        "main.css": {
+            "files": [
+                "styles/main.scss"
+            ]            
+        }
+    }
+}

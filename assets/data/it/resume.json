@@ -1,0 +1,171 @@
+{
+    "basics": {
+        "name": "Luca Castellone",
+        "label": "Web Developer",
+        "picture": "",
+        "email": "luca.castellone@gmail.com",
+        "phone": "+39 3294642213",
+        "website": "",
+        "summary": "Ciao sono Luca - un Web Developer, che adora lavorare con progetti creativi stimolanti. Ho quattro anni d’esperienza lavorativa, durante i quali ho gestito svariati progetti e sviluppato competenze in diversi settori. Il centro del mio interesse è nello sviluppo di architetture applicative scalabili e manutenibili, facendo leva sulle migliori pratiche di settore, i design patterns, e la creatività. Parte della mia creatività risiede nel desiderio di apprendere. Miglioro costantemente le mie soluzioni e mi piace tenermi aggiornato, se non un passo avanti!",
+        "location": {
+            "address": "Via Eurialo 17",
+            "postalCode": "",
+            "city": "Napoli",
+            "countryCode": "IT"
+        },
+        "profiles": [{
+            "network": "Skype",
+            "username": "luca.castellone",
+            "url": "skype:luca.castellone?add"
+        }, {
+            "network": "Github",
+            "username": "Kilbourne",
+            "url": "https://github.com/Kilbourne"
+        }]
+    },
+    "work": [{
+        "company": "Menthalia",
+        "position": "Full-stack web developer",
+        "website": "http://www.menthalia.com",
+        "startDate": "2015-05-13",
+        "endDate": "",
+        "summary": "Menthalia è un'agenzia di comunicazione integrata con una rete di clienti incentrata principalmente nel settore sanitario e farmaceutico. Sono l'unico “tech-guy” - esperto informatico - dell'azienda e ho diretta responsabilità su tutte le attività IT, comunicando direttamente con le parti interessate per valutare i requisiti di progetto, e convertire i bisogni in un soluzioni di architettura intuitive e scalabili. Il mio compito principale è la costruzione di applicazioni web (in particolare siti web dotati di CMS), coprendo tutte le attività, dallo sviluppo del front-end e del back-end, dev-ops, migrazioni, progettazione, supporto e analytics - fai il suo nome, e c'avrò messo le mie mano sopra. Il mio team è formato da un impaginatore (che crea l'idea grafica di base) e un copywriter.",
+        "highlights": [
+            { "title": "Maison Tatiana Faberge", "url": "https://www.tatianafaberge.net/it" },
+            { "title": "Biogena", "url": "http://www.biogena-lab.com" },
+            { "title": "Opensource in Medicine", "url": "https://www.opensourceinmedicine.com" }, {
+                "title": "I pregi d'Italia",
+                "url": "https://www.ipregiditalia.it"
+            }
+        ]
+    }],
+
+    "volunteer": [{
+        "organization": "L.E.S.S. - Centro Studi e Iniziative di Lotta all'Esclusione sociale per lo Sviluppo",
+        "position": "Mediatore Socio-culturale",
+        "website": "http://www.lessimpresasociale.it/",
+        "summary": "Assistenza legale, interpretariato, mediazione socio-culturale rivolta ai migranti, in particolare rifugiati e richiedenti asilo."
+
+    }, {
+        "organization": "Cooperativa sociale Citta dell'essere",
+        "position": "Servizio Civile",
+        "summary": "Operatore front e back office, creazione e promozione di corsi e servizi per il tempo libero, tutor in classe per utenti disabili."
+
+    }],
+    "education": [{
+        "institution": "Università degli studi di Napoli, L'Orientale",
+        "area": "Sviluppo e Cooperazione",
+        "studyType": "Laura triennale",
+        "startDate": "2004-01-01",
+        "endDate": "2008-01-01",
+        "courses": [
+            "Scienze storico-sociali",
+            "Epistemologia/Sociologia della conoscenza",
+            "Economia politica internazionale",
+            "Analisi dei sistemi-mondo",
+            "Etnografia"
+        ]
+    }],
+    "skills": [{
+        "name": "Linguaggi",
+        "keywords": [
+            "JavaScript",
+            "CSS",
+            "PHP"
+        ]
+    }, {
+        "name": "Skills",
+        "keywords": [
+            "Qualità dell’implementazione (scalabilità, manutenibilità)",
+            "Progettazione dell'interfaccia utente e schemi di interazione",
+            "Implementazione responsive e mobile first",
+            "Stranezze di compatibilità cross browser",
+            "Guide di stile",
+            "Implementazione e consumo di RESTful API (OAuth, Graph-QL)",
+            "Design e normalizzazione del database",
+            "Sicurezza",
+            "Forte conoscenza dell'ecosistema (framework, librerie, plugin, migliori pratiche ...)",
+            "Ottimizzazione delle prestazioni",
+            "Accessibilità",
+            "Ottimizzazione del motore di ricerca",
+            "Analytics",
+            "Pubblicità tramite Motori di ricerca e  social network",
+            "Integrazione con API di terze parti (in particolare maggiori social network)",
+            "Pianificazione del progetto, documentazione, licenze / Legale",
+            "Conoscenza minima lavorativa di Photoshop e Illustrator"
+        ]
+    }, {
+        "name": "Patterns and Concetti",
+        "keywords": [
+            "Component-based development: (modular, encapsulated, and reusable and namespaced code)",
+            "Classical OOP: ( class inheritance, interface, abstract class, trait, class autoloading)",
+            "Prototype inheritance and alternatives: ( factory, composition/mixins, delegation, duck typing)",
+            "Functional programming: ( function composition, partial application, currying, purity, immutables, recursion, memoization, lazy evaluation, reactivity) ",
+            "Data structures: (lists, hash tables, stacks, queues, graphs, linked lists, tree )",
+            "App architecture: (Inversion of control dependency injector, MV*/MVVM, Router, Middleware, Flux/Redux)",
+            "Data binding: ( dirty checking, dependency tracking, virtual DOM)",
+            "Observer pattern implementations: (Event emitter / PubSub)",
+            "Async flow control: (callback hell, promises, generator, async/await)",
+            "Active Record / Data Mapper",
+            "OWASP Most Critical Web Application Security Risks list ",
+            "Performance driven development: (Critical rendering path, Responsive images, Leak-Hunting, Layout trashing prevention, Web font loading strategies, Lazy loading, throttle/debouncing, caching techniques)",
+            "Node.js single-thread non-blocking asynchronous event loop",
+            "Buffers and Streams",
+            "OOCSS ITCSS BEM ",
+            "Progressive web app: (progressive enhancement, Isomorphic Rendering, Web App Manifest, Service Worker, App Shell, Push Notification, IndexDb, Background sync)"
+        ]
+    }, {
+        "name": "Librerie e Tecnologie",
+        "keywords": [
+            "Sass",
+            "PostCSS",
+            "ES6",
+            "React",
+            "Vuejs",
+            "Angular",
+            "jQuery",
+            "Lodash",
+            "WordPress",
+            "WooCommerce",
+            "WP-CLI",
+            "Bedrock+Sage",
+            "ReactNative",
+            "Electron",
+            "Nodejs",
+            "Meteor",
+            "Express",
+            "Laravel",
+            "Eloquent Doctrine",
+            "MySQL/MariaDB",
+            "Mongo",
+            "ElasticSearch",
+            "Redis Memcached",
+            "Adwords FBAds",
+            "PayPal Stripe",
+            "Cloudfare",
+            "Letsencrypt",
+            "OneSignal MailChimp",
+            "Microformats, OpenGraph, Schema.org ",
+            "Microdata, rdf-a, json-ld"
+        ]
+    }, {
+        "name": "DevOps",
+        "keywords": [
+            "Amministrazione: Linux Bash, NGINX/APACHE",
+            "Containerizzazione: Docker ",
+            "Panello di controllo: Cpanel/Plesk",
+            "Controllo del codice sorgente: Git, Github, BitBucket",
+            "Gestori dei packages: Composer, packagist, npm/yarn, bower",
+            "Build: babeljs, webpack & browserify, gulp, npm run, sourcemaps",
+            "Deployment: Capistrano, shipit ",
+            "Hosting preferiti: Digital Ocean, SiteGround"
+        ]
+    }],
+    "languages": [{
+        "language": "Italiano",
+        "fluency": "Madrelingua"
+    }, {
+        "language": "Inglese",
+        "fluency": "Buona comprensione e scrittura. Pronuncia non eccezionale, un po' arrugginita."
+    }]
+}

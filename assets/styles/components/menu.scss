@@ -1,0 +1,106 @@
+.menu {
+    order: 2;
+    width: 100%;
+    text-align: center;
+    background-color: #88ACA1;
+    padding: 14px 1rem;
+    position: relative;
+    >ul {
+        display: inline-block;
+        vertical-align: top;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @media(min-width: 534px) {
+            padding: 0 68.6px;
+        }
+        @media(max-width:533.999px) {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.menu-item {
+    a:hover {
+        text-decoration: none;
+    }
+    display: inline-block;
+    vertical-align:top;
+    margin: .5rem 1rem;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    width: 150px;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+    @media screen and (max-width: 450px) {
+        width: 80%;
+        padding: 1rem;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        height: 4px;
+        transition-property: left, right;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+    }
+    &:hover::before {
+        left: 0;
+        right: 0;
+    }
+    &.active {
+        transition-property: color;
+        transition-duration: 0.3s;
+        font-weight: 700;
+        &:focus,
+        &.animating {
+            color: #fff;
+            &::before {
+                transform: scaleY(1);
+            }
+        }
+        &::before {
+            top: 0;
+            left: 0;
+            right: 0;
+            transform: scaleY(0);
+            transform-origin: 50% 100%;
+            transition-property: transform;
+            transition-duration: 0.4s;
+            height: auto;
+        }
+    }
+}
+
+.lang-sel {
+    display: inline-block;
+    vertical-align: top;
+    margin: .25rem 0;
+    @media(min-width: 534px) {
+        position: absolute;
+        margin-bottom: 0;
+    }
+    right: 1rem;
+    top: 9px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 7.5px;
+    &.it {
+        padding: 1px;
+    }
+    a {
+        display: inline-block;
+        vertical-align: top;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}

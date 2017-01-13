@@ -1,0 +1,25 @@
+%marker {
+    font-family: "Permanent Marker";
+}
+
+.skills-title-container {
+    top: 0px;
+    width: 92%;
+    z-index: 20;
+    background-color: white;
+    left: 0px;
+    margin: 0px 4%;
+    padding: 3% 0px 0;
+    background-clip: padding-box;
+    border-bottom: 5.7vh solid rgba(255, 255, 255, 0);
+}
+
+.skills-short-description-wrapper {
+    text-align: left;
+    font-size: 1rem;
+    margin: 2% auto;
+}
+
+.skill-short-description {
+    width: 35%;
+}

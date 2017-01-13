@@ -1,0 +1,12 @@
+{% macro body(pagename, props,lang,domain) %}
+<div id="barba-wrapper">
+    <div class="barba-container {{pagename}} static" data-namespace="{{pagename}}" {{ props }}>
+        <div class="barba-container-wrapper">
+            <div class="barba-subwrapper">
+                {{ caller() }}
+            </div>
+        </div>
+        {% include "menu.html" %}
+    </div>
+</div>
+{% endmacro %}

@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #6C6662;
+    font-family: "chaparralpro", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #747474;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'brandon_grotesque';
+}
+
+@page {
+    size: auto;
+    margin: 0cm;
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,69 @@
+{
+  "name": "MyResume",
+  "version": "1.0.0",
+  "author": "Luca Castellone",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kilbourne/resume.git"
+  },
+  "scripts": {
+    "build": "gulp",
+    "jshint": "gulp jshint"
+  },
+  "engines": {
+    "node": ">= 0.12.0",
+    "npm": ">=2.1.5"
+  },
+  "devDependencies": {
+    "asset-builder": "^1.1.0",
+    "browser-sync": "^2.18.5",
+    "del": "^2.2.2",
+    "dotenv": "^2.0.0",
+    "fg-loadcss": "^1.2.0",
+    "filenamify": "^1.2.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-util": "^0.5.5",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-data": "^1.2.1",
+    "gulp-flatten": "^0.3.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-preprocess": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-responsive": "^2.7.0",
+    "gulp-rev": "^7.1.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "html-pdf": "^2.1.0",
+    "image-size": "^0.5.1",
+    "imagemin-pngcrush": "^5.0.0",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1",
+    "lazypipe": "^1.0.1",
+    "lodash.mergewith": "^4.6.0",
+    "merge-stream": "^1.0.1",
+    "nunjucks-i18n": "^2.0.0",
+    "pageres": "^4.2.0",
+    "require-dir": "^0.3.1",
+    "run-sequence": "^1.2.2",
+    "webpack": "^2.1.0-beta.26",
+    "webpack-dev-middleware": "^1.9.0",
+    "webpack-hot-middleware": "^2.13.2",
+    "webpack-stream": "^3.2.0"
+  },
+  "dependencies": {
+    "barba.js": "^1.0.0",
+    "element-dataset": "^2.2.4",
+    "mobile-detect": "^1.3.5",
+    "skrollr": "^0.6.26",
+    "skrollr-ie": "Prinzhorn/skrollr-ie"
+  }
+}

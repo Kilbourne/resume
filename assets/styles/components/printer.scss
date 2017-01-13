@@ -1,0 +1,188 @@
+@import "../global/variables";
+@import "../global/mixins";
+.animation-wrapper {
+    background-color: $printer-background-color;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    &+* {
+        margin-top: 4450px;
+    }
+    &.start {
+        position: absolute;
+        height: 100vh;
+        &+* {
+            margin-top: 104.7vh;
+        }
+        .printer-cont,
+        .hgroup>span,
+        .fa-angle-double-down {
+            opacity: 0;
+        }
+        .fa-angle-double-down {
+            position: absolute;
+        }
+    }
+}
+
+.animation-wrapper .fa-angle-double-down {
+    font-size: 4.5rem;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.animation-wrapper i {
+    font-size: 2rem;
+    color: $printer-text-color;
+}
+
+.hgroup {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $printer-text-color;
+    font-size: 1.2rem;
+}
+
+.hgroup h1 {
+    text-transform: capitalize;
+    font-size: 3.4rem;
+    line-height: 3.4rem;
+    color: $printer-text-color;
+}
+
+.hgroup h2 {
+    color: $printer-text-color;
+    font-size: 1.3rem;
+    line-height: 1rem;
+    text-transform: capitalize;
+    margin: 20px 0px;
+    position: relative;
+}
+
+@media screen and (min-width:460px) {
+    .hgroup h1 {
+        font-size: 5.4rem;
+        line-height: 5.4rem;
+    }
+    .hgroup h2 {
+        font-size: 1.6rem;
+        margin: 50px 0;
+    }
+}
+
+.hgroup a {
+    color: $skip-text-color;
+}
+
+.printer-cont {
+    max-width: 600px;
+    max-height: 600px;
+    width: 100vw;
+    height: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    perspective: 510px;
+}
+
+.paper {
+    width: 35%;
+    height: 49.5%;
+    max-width: 210px;
+    max-height: 297px;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    z-index: 3;
+    background: transparent linear-gradient(to right, #FFF 0px, #FFF 50%, #FCFCFC 50%, #FCFCFC 100%) repeat scroll 0% 0%;
+}
+
+.printed {
+    background: transparent url("#{$baseurl}images/paper.jpg") repeat scroll 0% 0% / cover;
+    width: 35%;
+    height: 49.5%;
+    max-width: 210px;
+    max-height: 297px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.printer-body {
+    width: 73.666%;
+    height: 21.666%;
+    max-width: 442px;
+    max-height: 130px;
+    background: transparent linear-gradient(to right, #D3D3D3 0px, #D3D3D3 50%, #C6C6C6 50%, #C6C6C6 100%) repeat scroll 0% 0%;
+    border-radius: 15px;
+    position: relative;
+    margin: 0px auto;
+    top: 13.333%;
+    z-index: 4;
+}
+
+.hole {
+    width: 70%;
+    margin: 0px auto;
+    height: 15.38%;
+    border-left: 40px solid #D3D3D3;
+    border-right: 40px solid #C6C6C6;
+    position: relative;
+    top: -15.38%;
+    box-shadow: 0px -5px 0px #939393 inset;
+}
+
+.light {
+    width: 10px;
+    height: 7.69%;
+    background-color: #34C0A3;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 7.69%;
+    right: 10px;
+}
+
+.hole.bottom {
+    border: 0;
+    top: auto;
+    bottom: -84.495%;
+    background-color: #2FAC92;
+    height: 10px;
+    border-radius: 3px 3px 0px 0px;
+    box-shadow: 0px 3px 5px #2FAC92;
+}
+
+.printer-cont .stand {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: -4px;
+}
+
+.printer-cont .stand.left {
+    left: 20px;
+    background-color: #D3D3D3;
+}
+
+.printer-cont .stand.right {
+    right: 20px;
+    background-color: #C6C6C6;
+}
+
+.no-js {
+    .animation-wrapper {
+        display: none;
+        &+* {
+            margin-top: 0;
+        }
+    }
+}

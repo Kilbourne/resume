@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'claire_hand';
+    src: url('clairehandbold-webfont.woff2') format('woff2'), url('clairehandbold-webfont.woff') format('woff'), url('clairehandbold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'claire_hand';
+    src: url('clairehandregular-webfont.woff2') format('woff2'), url('clairehandregular-webfont.woff') format('woff'), url('clairehandregular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

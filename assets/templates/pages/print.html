@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="" moznomarginboxes mozdisallowselectionprint>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Luca Castellone - Resume </title>
+    <link rel="icon" type="image/png" href="{{ domain }}images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ domain }}images/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" href="{{ domain }}images/favicon.ico">
+    <link href="{{ domain }}styles/main.css" rel='stylesheet'>
+</head>
+
+<body class="print">
+    <div id="barba-wrapper">
+        <div class="barba-container  header static" data-animationOut="rotateFall ontop" data-animationIn="scaleUp">
+            <div class="barba-container-wrapper">
+                {% include "../partials/header.html" %}
+            </div>
+        </div>
+        <div class="barba-container  work static" data-animationOut="rotateFall ontop" data-animationIn="scaleUp">
+            <div class="barba-container-wrapper">
+                {% include "../partials/works.html" %}
+            </div>
+        </div>
+        <div class="barba-container  skills static" data-animationOut="rotateFall ontop" data-animationIn="scaleUp">
+            <div class="barba-container-wrapper">
+                {% include "../partials/skills.html" %}
+            </div>
+        </div>
+        <div class="barba-container  others static" data-animationOut="rotateFall ontop" data-animationIn="scaleUp">
+            <div class="barba-container-wrapper">
+                {% include "../partials/others.html" %}
+            </div>
+        </div>
+    </div>
+    </div>
+
+</html>

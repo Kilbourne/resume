@@ -1,0 +1,41 @@
+.barba-container {
+    &.others {
+        background-color: #0083db;
+        &,
+        & a {
+            color: #fff;
+        }
+        .edu-title {
+            font-size: 1.2em;
+        }
+        h3 {
+            font-size: 1.34em;
+        }
+        .education li {
+            font-size: 0.9em;
+        }
+        .civic li {
+            margin: 0.25rem 0;
+        }
+    }
+}
+
+.menu {
+    &.others {
+        background-color: #fff;
+        .menu-item {
+            border: 2px solid #0083DB;
+            a {
+                color: #0083DB;
+            }
+            &.active,
+            &::before,
+            &.active::before {
+                background-color: #0083DB;
+            }
+        }
+        .lang-sel {
+            background-color: #0083DB;
+        }
+    }
+}

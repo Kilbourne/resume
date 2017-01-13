@@ -1,0 +1,1 @@
+{% extends "../partials/main.html" %} {% set pagename = "header" %} {% block style %} {{ pagename|critical }} {% endblock %} {% import "../partials/body.html" as body %} {% block body %} {% call body.body(pagename,'data-animationOut="rotateFall ontop" data-animationIn="scaleUp"',lang,domain ) -%} {% include "../partials/header.html" %} {%- endcall %} {% endblock %}
