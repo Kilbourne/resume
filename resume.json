@@ -1,0 +1,170 @@
+{
+    "basics": {
+        "name": "Luca Castellone",
+        "label": "Web Developer",
+        "picture": "",
+        "email": "luca.castellone@gmail.com",
+        "phone": "+39 3294642213",
+        "website": "",
+        "summary": "Hello I'm Luca - an appassionate Web Developer, who loves to work with challenging and creative projects.  I have four years relevant working experience, during which I have managed many different projects and built skills in several areas.  My focus is in developing scalable and maintainable application architectures by invoking industry best practices, design patterns, and creativity.  Part of my creativity is my eagerness to learn. I'm constantly improving my solutions and I like to keep up, or even stay ahead, as well!",
+        "location": {
+            "address": "Via Eurialo 17",
+            "postalCode": "",
+            "city": "Napoli",
+            "countryCode": "IT"
+        },
+        "profiles": [{
+            "network": "Skype",
+            "username": "luca.castellone",
+            "url": "skype:luca.castellone?add"
+        }, {
+            "network": "Github",
+            "username": "Kilbourne",
+            "url": "https://github.com/Kilbourne"
+        }]
+    },
+    "work": [{
+        "company": "Menthalia",
+        "position": "Full-stack web developer",
+        "website": "http://www.menthalia.com",
+        "startDate": "2015-05-13",
+        "endDate": "",
+        "summary": "Menthalia is a full-service communications agency, primarily serving healthcare & pharmaceutical clients. I am the sole “tech-guy” of company, so have direct responsibility on all IT activities and communicate directly with stakeholders to assess project requirements, and convert needs into intuitive and scalable architecture solutions. My main duty is building web application(in particular CMS websites), covering everything from front-end and back-end development, dev-ops, migration, design, support, analytics – you name it, I’ve had my hand in  it at some point. My team is formed by a layout artist (who creates the basic graphic idea) and a copywriter.",
+        "highlights": [
+            { "title": "Maison Tatiana Faberge", "url": "https://www.tatianafaberge.net/it" },
+            { "title": "Biogena", "url": "http://www.biogena-lab.com" },
+            { "title": "Opensource in Medicine", "url": "https://www.opensourceinmedicine.com" }, {
+                "title": "I pregi d'Italia",
+                "url": "https://www.ipregiditalia.it"
+            }
+        ]
+    }],
+
+    "volunteer": [{
+        "organization": "L.E.S.S. - Centro Studi e Iniziative di Lotta all'Esclusione sociale per lo Sviluppo",
+        "position": "Social mediator",
+        "website": "http://www.lessimpresasociale.it/",
+        "summary": "Legal Assistance, Interpreting, Social and Cultural Mediation to migrants, in particular refugees and asylum seekers."
+    }, {
+        "organization": "Cooperativa sociale Citta dell'essere",
+        "position": "Community service",
+        "summary": "Front and back office operator, Marketing of Training and Lifetime Services, Class tutor during class lessons for disabled users."
+    }],
+    "education": [{
+        "institution": "Oriental Studies University of Naples",
+        "area": "Development Studies",
+        "studyType": "Bachelor degree",
+        "startDate": "2004-01-01",
+        "endDate": "2008-01-01",
+        "courses": [
+            "Historic-Social Sciences",
+            "Epistemology/Sociology of Knowledge",
+            "International Political Economy",
+            "World-system Analysis",
+            "Ethnography"
+        ]
+    }],
+    "skills": [{
+        "name": "Languages",
+        "keywords": [
+            "JavaScript",
+            "CSS",
+            "PHP"
+        ]
+    }, {
+        "name": "Skills",
+        "keywords": [
+            "Implementation quality (scalability, maintainability)",
+            "User interface design and interaction patterns",
+            "Mobile-first responsive web implementation",
+            "Cross browser compatibility quirks",
+            "Style Guide",
+            "RESTful API implementation and Consumption (OAuth, Graph-QL)",
+            "Database Design and Normalization",
+            "Security",
+            "Strong knowledge of the ecosystem (frameworks, libraries, plugins, best practices…)",
+            "Performance optimization",
+            "Accessibility",
+            "Search engine optimization",
+            "Analytics",
+            "Search engine and social network advertising",
+            "Integration with third-party API (major social network in particular)",
+            "Project planning, Documentation, Licenses/Legal",
+            "Minimum working knowledge of Photoshop and Illustrator"
+        ]
+    }, {
+        "name": "Patterns and Concepts",
+        "keywords": [
+            "Component-based development: (modular, encapsulated, and reusable and namespaced code)",
+            "Classical OOP: ( class inheritance, interface, abstract class, trait, class autoloading)",
+            "Prototype inheritance and alternatives: ( factory, composition/mixins, delegation, duck typing)",
+            "Functional programming: ( function composition, partial application, currying, purity, immutables, recursion, memoization, lazy evaluation, reactivity) ",
+            "Data structures: (lists, hash tables, stacks, queues, graphs, linked lists, tree )",
+            "App architecture: (Inversion of control dependency injector, MV*/MVVM, Router, Middleware, Flux/Redux)",
+            "Data binding: ( dirty checking, dependency tracking, virtual DOM)",
+            "Observer pattern implementations: (Event emitter / PubSub)",
+            "Async flow control: (callback hell, promises, generator, async/await)",
+            "Active Record / Data Mapper",
+            "OWASP Most Critical Web Application Security Risks list ",
+            "Performance development: (Critical rendering path, Responsive images, Leak-Hunting, Layout trashing prevention, Web font loading strategies, Lazy loading, throttle/debouncing, caching techniques)",
+            "Node.js single-thread non-blocking asynchronous event loop",
+            "Buffers and Streams",
+            "OOCSS ITCSS BEM ",
+            "Progressive web app: (progressive enhancement, Isomorphic Rendering, Web App Manifest, Service Worker, App Shell, Push Notification, IndexDb, Background sync)"
+        ]
+    }, {
+        "name": "Libraries and Technologies",
+        "keywords": [
+            "Sass",
+            "PostCSS",
+            "ES6",
+            "React",
+            "Vuejs",
+            "Angular",
+            "jQuery",
+            "Lodash",
+            "WordPress",
+            "WooCommerce",
+            "WP-CLI",
+            "Bedrock+Sage",
+            "ReactNative",
+            "Electron",
+            "Nodejs",
+            "Meteor",
+            "Express",
+            "Laravel",
+            "Eloquent Doctrine",
+            "MySQL/MariaDB",
+            "Mongo",
+            "ElasticSearch",
+            "Redis Memcached",
+            "Adwords FBAds",
+            "PayPal Stripe",
+            "Cloudfare",
+            "Letsencrypt",
+            "OneSignal MailChimp",
+            "Microformats, OpenGraph, Schema.org ",
+            "Microdata, rdf-a, json-ld"
+        ]
+    }, {
+        "name": "DevOps",
+        "keywords": [
+            "Administration: Linux Bash, NGINX/APACHE",
+            "Containerization: Docker ",
+            "Control Panel: Cpanel/Plesk",
+            "Source Control: Git, Github, BitBucket",
+            "Packages Manager: Composer, packagist, npm/yarn, bower",
+            "Build: babeljs, webpack & browserify, gulp, npm run, sourcemaps",
+            "Deployment: Capistrano, shipit ",
+            "Favourite Hosting: Digital Ocean, SiteGround"
+        ]
+    }],
+    "languages": [{
+        "language": "Italian",
+        "fluency": "Native speaker"
+    }, {
+        "language": "English",
+        "fluency": "Good comprehension and writing skills. Not outstanding speaker, a little rusty"
+    }]
+
+}

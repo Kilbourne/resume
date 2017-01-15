@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'chaparralpro';
+    src: url('ChaparralPro-Regular.woff2') format('woff2'), url('ChaparralPro-Regular.woff') format('woff'), url('ChaparralPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
