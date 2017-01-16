@@ -115,6 +115,8 @@
     }, {
         "name": "Libraries and Technologies",
         "keywords": [
+            "Bootstrap",
+            "Foundation",
             "Sass",
             "PostCSS",
             "ES6",
@@ -128,6 +130,7 @@
             "WP-CLI",
             "Bedrock+Sage",
             "ReactNative",
+            "Ionic",
             "Electron",
             "Nodejs",
             "Meteor",
