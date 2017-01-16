@@ -117,6 +117,8 @@
     }, {
         "name": "Librerie e Tecnologie",
         "keywords": [
+            "Bootstrap",
+            "Foundation",
             "Sass",
             "PostCSS",
             "ES6",
@@ -130,6 +132,7 @@
             "WP-CLI",
             "Bedrock+Sage",
             "ReactNative",
+            "Ionic",
             "Electron",
             "Nodejs",
             "Meteor",
