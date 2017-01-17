@@ -1,5 +1,5 @@
 export default function(e) {
-    var id = e.target.id;
+    var id = e.currentTarget.id;
     e.preventDefault();
     e.stopPropagation();
     if (id === 'print') {
