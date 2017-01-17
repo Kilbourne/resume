@@ -96,7 +96,8 @@ module.exports = {
             "format": "A4", // allowed units: A3, A4, A5, Legal, Letter, Tabloid
             "orientation": "portrait", // portrait or landscape
             "header": {
-                "height": "0mm",
+                "height": "13mm",
+                "contents": '<div style="text-align: center;">Luca Castellone - Resume <a href="https://kilbourne.github.io/resume/">https://kilbourne.github.io/resume/</a>  </div>'
             },
             "footer": {
                 "height": "0mm",
